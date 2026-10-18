@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --background: #101010;
+    --foreground: #ffffff;
+    --font-golos: Nunito, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+    --lightningcss-light: ;
+    --lightningcss-dark: initial;
+    color-scheme: dark;
+    background-color: var(--background);
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: Nunito, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    overflow-x: hidden;
+}
+
+main {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+}
+
+.logo {
+    background-color: var(--foreground);
+    color: var(--background);
+    -webkit-user-select: none;
+    user-select: none;
+    opacity: 1;
+    font-family: var(--font-golos), sans-serif;
+    margin: .67em 0;
+    padding: 3px 8px;
+    animation: .22s ease-in-out both logo-intro;
+    position: relative;
+}
+
+.back_link {
+    color: var(--background);
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.back_link:hover {
+    color: #888888;
+    text-decoration: none;
+}
+
+span {
+    color: var(--background);
+}
+
+.link_button {
+    color: var(--foreground);
+    font-size: 28px;
+    text-decoration: none;
+    padding: 3px 7px;
+    transition: all 0.3s ease;
+}
+
+.link_button:hover {
+    color: var(--background);
+    background-color: var(--foreground);
+    text-decoration: none;
+}
+
+.footer-text {
+    color: var(--foreground);
+    text-align: center;
+}

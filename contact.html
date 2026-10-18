@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Maki</title>
+</head>
+<body>
+    <div class="main_wrapper">
+        <main>
+            <div style="height:90px"></div>
+            <h1 class="logo">
+                <span>
+                    <a class="back_link" href="main.html">MAKI PRESENTS</a>
+                    /
+                </span>
+                <span>contact me</span>
+            </h1>
+            <div style="height:10px"></div>
+            <a href="#" class="link_button">makidevcontact@gmail.com</a>
+        </main>
+        <footer>
+            <div class="footer-text">
+                <p>Made by Maki 2026</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('email-link').addEventListener('click', function(e) {
+            e.preventDefault(); // отменяем переход по ссылке
+            const email = this.textContent;
+            navigator.clipboard.writeText(email).then(() => {
+                alert('Email copied: ' + email);
+            });
+        });
+    </script>
+</body>
+</html>
