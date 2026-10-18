@@ -18,7 +18,7 @@
                 <span>contact me</span>
             </h1>
             <div style="height:10px"></div>
-            <a href="#" class="link_button">makidevcontact@gmail.com</a>
+            <a class="link_button">makidevcontact@gmail.com</a>
         </main>
         <footer>
             <div class="footer-text">
@@ -29,7 +29,7 @@
 
     <script>
         document.getElementById('email-link').addEventListener('click', function(e) {
-            e.preventDefault(); // отменяем переход по ссылке
+            e.preventDefault();
             const email = this.textContent;
             navigator.clipboard.writeText(email).then(() => {
                 alert('Email copied: ' + email);
